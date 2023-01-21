@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ALERT / TOOLTIPS</title>
+
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container"><br>
+
+		<!----------  ALERT BOXES :---------->
+
+		<h2 class="text-center text-danger">ALERT BOXES</h2>
+		<br>
+
+		<div class="alert alert-success">
+           <strong>Success!</strong> This is normal alert box.
+         
+		</div>
+
+		<div class="alert alert-danger">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+           <strong>Success!</strong> alert box with close button.
+         
+		</div>
+
+		<div class="alert alert-primary fade show">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+           <strong>Success!</strong> <a href="#" class="alert-link">Click Here to read Message.</a>
+         
+		</div><br>
+
+		<!----------  TOOL TIP WITH JQUERY :---------->
+
+		<h2 class="text-center text-danger">TOOL TIP WITH JQUERY</h2><br>
+
+		<a href="#" title="Web Developer" data-toggle="tooltip"> Akash Pandey = UP POPUP BOX</a><br>
+		<a href="#" title="Web Developer" data-toggle="tooltip" data-placement="right"> Akash Pandey = RIGHT POPUP BOX</a><br>
+		<a href="#" title="Web Developer" data-toggle="tooltip" data-placement="bottom"> Akash Pandey = DOWN POPUP BOX</a><br>
+
+		<!---------- JQUERY CODE :---------->
+
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+
+				$('[data-toggle="tooltip"]').tooltip();
+			})
+		</script>
+
+	</div>
+
+</body>
+</html>
